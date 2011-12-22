@@ -1,0 +1,9 @@
+
+[Global]
+Buildorder=1000
+Version=1
+Lock=asim-openx86
+Description=Description of openx86
+Name=openx86
+Tag=HEAD
+CSN=CSN-openx86-0
