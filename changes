@@ -1,0 +1,374 @@
+
+----------
+mgambhir    Date: Fri Dec 23 05:27:18 EST 2011  CSN: CSN-openx86-2
+                  Fri Dec 23 10:27:18 UTC 2011
+
+
+Directory experiments
+ openx86/                  Locally Added               0 
+
+Directory experiments/openx86
+ regressions/              Locally Added               0 
+
+Directory .
+ experiments/              Locally Added               0 
+
+Directory config/pm/openx86
+ openx86-feeder-simple-core.apm Locally Added               0 
+
+Directory lib
+ xed2-intel64/             Locally Added               0 
+
+Directory lib/xed2-intel64
+ LICENSE                   Locally Added               0 
+ include/                  Locally Added               0 
+
+Directory lib/xed2-intel64/include
+ xed-gen-table-defs.h      Locally Added               0 
+ xed-inst.h                Locally Added               0 
+ xed-reg-role-enum.h       Locally Added               0 
+ xed-extension-enum.h      Locally Added               0 
+ xed-reg-enum.h            Locally Added               0 
+ xed-operand-visibility-enum.h Locally Added               0 
+ xed-iclass-enum.h         Locally Added               0 
+ xed-chip-enum.h           Locally Added               0 
+ xed-machine-mode-enum.h   Locally Added               0 
+ xed-nonterminal-enum.h    Locally Added               0 
+ xed-operand-storage.h     Locally Added               0 
+ xed-immed.h               Locally Added               0 
+ xed-decoded-inst.h        Locally Added               0 
+ xed-disas.h               Locally Added               0 
+ xed-operand-action-enum.h Locally Added               0 
+ xed-operand-width-enum.h  Locally Added               0 
+ xed-common-defs.h         Locally Added               0 
+ xed-agen.h                Locally Added               0 
+ xed-iform-enum.h          Locally Added               0 
+ xed-encoder-hl.h          Locally Added               0 
+ xed-format-options.h      Locally Added               0 
+ xed-reg-class-enum.h      Locally Added               0 
+ xed-operand-values-interface.h Locally Added               0 
+ xed-version.h             Locally Added               0 
+ xed-common-hdrs.h         Locally Added               0 
+ xed-flag-action-enum.h    Locally Added               0 
+ xed-syntax-enum.h         Locally Added               0 
+ xed-operand-enum.h        Locally Added               0 
+ xed-flags.h               Locally Added               0 
+ xed-iformfl-enum.h        Locally Added               0 
+ xed-init.h                Locally Added               0 
+ xed-types.h               Locally Added               0 
+ xed-convert-table-init.h  Locally Added               0 
+ xed-isa-set-enum.h        Locally Added               0 
+ xed-encoder-iforms.h      Locally Added               0 
+ xed-util.h                Locally Added               0 
+ xed-category-enum.h       Locally Added               0 
+ xed-decode.h              Locally Added               0 
+ xed-operand-ctype-map.h   Locally Added               0 
+ xed-attributes.h          Locally Added               0 
+ xed-iform-map.h           Locally Added               0 
+ xed-operand-element-xtype-enum.h Locally Added               0 
+ tags                      Locally Added               0 
+ xed-exception-enum.h      Locally Added               0 
+ xed-portability.h         Locally Added               0 
+ xed-address-width-enum.h  Locally Added               0 
+ xed-isa-set.h             Locally Added               0 
+ xed-operand-convert-enum.h Locally Added               0 
+ xed-operand-type-enum.h   Locally Added               0 
+ xed-get-time.h            Locally Added               0 
+ xed-flag-enum.h           Locally Added               0 
+ xed-operand-ctype-enum.h  Locally Added               0 
+ xed-reg-class.h           Locally Added               0 
+ xed-state.h               Locally Added               0 
+ xed-init-pointer-names.h  Locally Added               0 
+ xed-immdis.h              Locally Added               0 
+ xed-decode-cache.h        Locally Added               0 
+ xed-error-enum.h          Locally Added               0 
+ xed-encode.h              Locally Added               0 
+ xed-inst-printer.h        Locally Added               0 
+ xed-interface.h           Locally Added               0 
+ xed-operand-element-type-enum.h Locally Added               0 
+ xed-operand-action.h      Locally Added               0 
+ xed-encoder-gen-defs.h    Locally Added               0 
+ xed-attribute-enum.h      Locally Added               0 
+
+Directory lib/xed2-intel64
+ lib/                      Locally Added               0 
+ BUG-REPORTS.txt           Locally Added               0 
+ README.txt                Locally Added               0 
+ misc/                     Locally Added               0 
+
+Directory lib/xed2-intel64/misc
+ idata.txt                 Locally Added               0 
+
+Directory lib/xed2-intel64
+ examples/                 Locally Added               0 
+
+Directory lib/xed2-intel64/examples
+ xed-examples-util.c       Locally Added               0 
+ xed-symbol-table.cpp      Locally Added               0 
+ xed-examples-util.h       Locally Added               0 
+ xed-symbol-table.H        Locally Added               0 
+ xed-ex4.c                 Locally Added               0 
+ xed.cpp                   Locally Added               0 
+ xed-ex6.c                 Locally Added               0 
+ udhelp.cpp                Locally Added               0 
+ xed-ex7.c                 Locally Added               0 
+ xed-ex5-enc.c             Locally Added               0 
+ udhelp.H                  Locally Added               0 
+ xed-size.c                Locally Added               0 
+ xed-tables.c              Locally Added               0 
+ xed-dll-discovery.c       Locally Added               0 
+ xed-min.c                 Locally Added               0 
+ xed-enc-lang.cpp          Locally Added               0 
+ xed-ex-agen.c             Locally Added               0 
+ xed-disas-macho.cpp       Locally Added               0 
+ xed-enc-lang.H            Locally Added               0 
+ xed-disas-raw.cpp         Locally Added               0 
+ xed-ex1.cpp               Locally Added               0 
+ xed-disas-macho.H         Locally Added               0 
+ xed-ex2.cpp               Locally Added               0 
+ xed-ex3.cpp               Locally Added               0 
+ xed-disas-raw.H           Locally Added               0 
+ xed-disas-pecoff.cpp      Locally Added               0 
+ xed-tester.cpp            Locally Added               0 
+ xed-disas-elf.cpp         Locally Added               0 
+ xed-disas-pecoff.H        Locally Added               0 
+ xed-examples-ostreams.cpp Locally Added               0 
+ xed-disas-elf.H           Locally Added               0 
+ makefile                  Locally Added               0 
+ xed-examples-ostreams.H   Locally Added               0 
+
+Directory lib/xed2-intel64
+ open-xed2_intel64.awb     Locally Added               0 
+
+Directory lib
+ xed2-ia32/                Locally Added               0 
+
+Directory lib/xed2-ia32
+ LICENSE                   Locally Added               0 
+ include/                  Locally Added               0 
+
+Directory lib/xed2-ia32/include
+ xed-gen-table-defs.h      Locally Added               0 
+ xed-inst.h                Locally Added               0 
+ xed-reg-role-enum.h       Locally Added               0 
+ xed-extension-enum.h      Locally Added               0 
+ xed-reg-enum.h            Locally Added               0 
+ xed-operand-visibility-enum.h Locally Added               0 
+ xed-iclass-enum.h         Locally Added               0 
+ xed-chip-enum.h           Locally Added               0 
+ xed-machine-mode-enum.h   Locally Added               0 
+ xed-nonterminal-enum.h    Locally Added               0 
+ xed-operand-storage.h     Locally Added               0 
+ xed-immed.h               Locally Added               0 
+ xed-decoded-inst.h        Locally Added               0 
+ xed-disas.h               Locally Added               0 
+ xed-operand-action-enum.h Locally Added               0 
+ xed-common-defs.h         Locally Added               0 
+ xed-operand-width-enum.h  Locally Added               0 
+ xed-agen.h                Locally Added               0 
+ xed-iform-enum.h          Locally Added               0 
+ xed-encoder-hl.h          Locally Added               0 
+ xed-format-options.h      Locally Added               0 
+ xed-reg-class-enum.h      Locally Added               0 
+ xed-operand-values-interface.h Locally Added               0 
+ xed-version.h             Locally Added               0 
+ xed-common-hdrs.h         Locally Added               0 
+ xed-flag-action-enum.h    Locally Added               0 
+ xed-syntax-enum.h         Locally Added               0 
+ xed-operand-enum.h        Locally Added               0 
+ xed-flags.h               Locally Added               0 
+ xed-iformfl-enum.h        Locally Added               0 
+ xed-init.h                Locally Added               0 
+ xed-types.h               Locally Added               0 
+ xed-convert-table-init.h  Locally Added               0 
+ xed-isa-set-enum.h        Locally Added               0 
+ xed-encoder-iforms.h      Locally Added               0 
+ xed-util.h                Locally Added               0 
+ xed-category-enum.h       Locally Added               0 
+ xed-decode.h              Locally Added               0 
+ xed-operand-ctype-map.h   Locally Added               0 
+ xed-attributes.h          Locally Added               0 
+ xed-iform-map.h           Locally Added               0 
+ xed-operand-element-xtype-enum.h Locally Added               0 
+ xed-exception-enum.h      Locally Added               0 
+ xed-portability.h         Locally Added               0 
+ xed-address-width-enum.h  Locally Added               0 
+ xed-isa-set.h             Locally Added               0 
+ xed-operand-convert-enum.h Locally Added               0 
+ xed-operand-type-enum.h   Locally Added               0 
+ xed-get-time.h            Locally Added               0 
+ xed-flag-enum.h           Locally Added               0 
+ xed-operand-ctype-enum.h  Locally Added               0 
+ xed-reg-class.h           Locally Added               0 
+ xed-state.h               Locally Added               0 
+ xed-init-pointer-names.h  Locally Added               0 
+ xed-immdis.h              Locally Added               0 
+ xed-decode-cache.h        Locally Added               0 
+ xed-error-enum.h          Locally Added               0 
+ xed-encode.h              Locally Added               0 
+ xed-inst-printer.h        Locally Added               0 
+ xed-interface.h           Locally Added               0 
+ xed-operand-element-type-enum.h Locally Added               0 
+ xed-operand-action.h      Locally Added               0 
+ xed-attribute-enum.h      Locally Added               0 
+ xed-encoder-gen-defs.h    Locally Added               0 
+
+Directory lib/xed2-ia32
+ lib/                      Locally Added               0 
+ open-xed2_ia32.awb        Locally Added               0 
+ BUG-REPORTS.txt           Locally Added               0 
+ README.txt                Locally Added               0 
+ misc/                     Locally Added               0 
+
+Directory lib/xed2-ia32/misc
+ idata.txt                 Locally Added               0 
+
+Directory lib/xed2-ia32
+ examples/                 Locally Added               0 
+
+Directory lib/xed2-ia32/examples
+ xed-examples-util.c       Locally Added               0 
+ xed-symbol-table.cpp      Locally Added               0 
+ xed-examples-util.h       Locally Added               0 
+ xed-symbol-table.H        Locally Added               0 
+ xed-ex4.c                 Locally Added               0 
+ xed.cpp                   Locally Added               0 
+ xed-ex6.c                 Locally Added               0 
+ udhelp.cpp                Locally Added               0 
+ xed-ex7.c                 Locally Added               0 
+ xed-ex5-enc.c             Locally Added               0 
+ udhelp.H                  Locally Added               0 
+ xed-size.c                Locally Added               0 
+ xed-tables.c              Locally Added               0 
+ xed-dll-discovery.c       Locally Added               0 
+ xed-min.c                 Locally Added               0 
+ xed-enc-lang.cpp          Locally Added               0 
+ xed-ex-agen.c             Locally Added               0 
+ xed-disas-macho.cpp       Locally Added               0 
+ xed-enc-lang.H            Locally Added               0 
+ xed-disas-raw.cpp         Locally Added               0 
+ xed-ex1.cpp               Locally Added               0 
+ xed-disas-macho.H         Locally Added               0 
+ xed-ex2.cpp               Locally Added               0 
+ xed-ex3.cpp               Locally Added               0 
+ xed-disas-raw.H           Locally Added               0 
+ xed-disas-pecoff.cpp      Locally Added               0 
+ xed-tester.cpp            Locally Added               0 
+ xed-disas-elf.cpp         Locally Added               0 
+ xed-disas-pecoff.H        Locally Added               0 
+ xed-examples-ostreams.cpp Locally Added               0 
+ xed-disas-elf.H           Locally Added               0 
+ makefile                  Locally Added               0 
+ xed-examples-ostreams.H   Locally Added               0 
+
+Directory .
+ lib/                      Locally Added               0 
+
+Directory modules/openx86
+ chip/                     Locally Added               0 
+
+Directory modules/openx86/chip
+ simple_openx86_chip/      Locally Added               0 
+
+Directory modules/openx86/chip/simple_openx86_chip
+ simple_openx86_chip.cpp   Locally Added               0 
+ simple_openx86_chip.h     Locally Added               0 
+ simple_openx86_chip.awb   Locally Added               0 
+
+Directory modules/openx86
+ iaddr/                    Locally Added               0 
+
+Directory modules/openx86/iaddr
+ open_inst_addr/           Locally Added               0 
+
+Directory modules/openx86/iaddr/open_inst_addr
+ open_inst_addr.awb        Locally Added               0 
+ open_inst_addr.cpp        Locally Added               0 
+ open_inst_addr.h          Locally Added               0 
+
+Directory modules/openx86
+ cpu_inst/                 Locally Added               0 
+
+Directory modules/openx86/cpu_inst
+ null_cpu_inst/            Locally Added               0 
+
+Directory modules/openx86/cpu_inst/null_cpu_inst
+ null_cpu_inst.cpp         Locally Added               0 
+ null_cpu_inst.h           Locally Added               0 
+ null_cpu_inst.awb         Locally Added               0 
+
+Directory modules/openx86
+ micro_inst/               Locally Added               0 
+
+Directory modules/openx86/micro_inst
+ open_x86_micro_inst/      Locally Added               0 
+
+Directory modules/openx86/micro_inst/open_x86_micro_inst
+ open_x86_micro_inst.h     Locally Added               0 
+ open_x86_micro_inst.awb   Locally Added               0 
+ open_x86_micro_inst.cpp   Locally Added               0 
+
+Directory modules/openx86
+ board/                    Locally Added               0 
+
+Directory modules/openx86/board
+ simple_openx86_board/     Locally Added               0 
+
+Directory modules/openx86/board/simple_openx86_board
+ simple_openx86_board.awb  Locally Added               0 
+ simple_openx86_board.cpp  Locally Added               0 
+ simple_openx86_board.h    Locally Added               0 
+
+Directory modules/openx86
+ cpu/                      Locally Added               0 
+
+Directory modules/openx86/cpu
+ simple_openx86_cpu/       Locally Added               0 
+
+Directory modules/openx86/cpu/simple_openx86_cpu
+ simple_openx86_cpu.awb    Locally Added               0 
+ simple_openx86_cpu.cpp    Locally Added               0 
+ simple_openx86_cpu.h      Locally Added               0 
+
+Directory modules/openx86
+ register_names/           Locally Added               0 
+
+Directory modules/openx86/register_names
+ open_x86_regs_none/       Locally Added               0 
+
+Directory modules/openx86/register_names/open_x86_regs_none
+ open_x86_regs_none.h      Locally Added               0 
+ open_x86_regs_none.awb    Locally Added               0 
+
+Directory modules/openx86
+ cpu_mode/                 Locally Added               0 
+
+Directory modules/openx86/cpu_mode
+ open_x86_cpu_mode/        Locally Added               0 
+
+Directory modules/openx86/cpu_mode/open_x86_cpu_mode
+ open_x86_cpu_mode.h       Locally Added               0 
+ open_x86_cpu_mode.awb     Locally Added               0 
+
+Directory modules/openx86
+ isa/                      Locally Added               0 
+
+Directory modules/openx86/isa
+ open_x86_isa/             Locally Added               0 
+
+Directory modules/openx86/isa/open_x86_isa
+ open_x86_isa.h            Locally Added               0 
+ open_x86_isa.awb          Locally Added               0 
+
+Directory modules/openx86
+ macro_inst/               Locally Added               0 
+
+Directory modules/openx86/macro_inst
+ open_x86_macro_inst/      Locally Added               0 
+
+Directory modules/openx86/macro_inst/open_x86_macro_inst
+ open_x86_macro_inst.cpp   Locally Added               0 
+ open_x86_macro_inst.h     Locally Added               0 
+ open_x86_macro_inst.awb   Locally Added               0 
+
+- Initial template implementation of a simple openx86 core model

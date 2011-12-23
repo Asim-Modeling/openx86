@@ -1,0 +1,176 @@
+
+[Global]
+SaveParameters=0
+DefaultBenchmark=
+Version=2.2
+Type=Asim
+RootName=Default Model Foundation
+RootProvides=model
+File=openx86-feeder-simple-core
+Class=Asim::Model
+DefaultRunOpts=
+Name=Unamed project
+Description=
+
+[Default Model Foundation]
+File=modules/model.awb
+Packagehint=asimcore
+
+[Model]
+DefaultAttributes=
+model=Default Model Foundation
+
+[Default Model Foundation/Requires]
+controller=Controller without TCL
+system=Multi-Chip System Version 2
+
+[Multi-Chip System Version 2]
+File=modules/system/multi_chip_common_system_v2.awb
+Packagehint=asimcore
+
+[X86 DRAL API]
+File=modules/dral_api/x86_dral_api.awb
+Packagehint=asimcore
+
+[Null Power Model]
+File=modules/power_model/null_power_model.awb
+Packagehint=asimcore
+
+[Context Scheduler/Requires]
+software_context=Asim Software Context
+instfeeder=Instruction Feeder
+
+[Basesystem classic/Requires]
+default_adf=Null Events ADF file
+
+[Asim Software Context]
+File=feeders/common/sw_context/sw_context.awb
+Packagehint=feeder
+
+[Context Scheduler]
+File=feeders/scheduler/context_sched/context_sched.awb
+Packagehint=feeder
+
+[Per instruction profile]
+File=modules/isa/utilities/instprofile/instprofile.awb
+Packagehint=asimcore
+
+[Asim Software Context/Requires]
+inst_stats=Per instruction profile
+
+[Multi-Chip System Version 2/Requires]
+basesystem=Basesystem classic
+packages=Null Package
+power_model=Null Power Model
+context_scheduler=Context Scheduler
+dral_api=X86 DRAL API
+warmup_manager=Null Warm-up Manager
+isa=Open x86 ISA for Micro Ops
+board=Simple Open x86 Board
+
+[Basesystem classic]
+File=modules/system/basesystem_classic/basesystem_classic.awb
+Packagehint=asimcore
+
+[Null Warm-up Manager]
+File=modules/warmup/null_warmup_manager.awb
+Packagehint=asimcore
+
+[Null Events ADF file]
+File=tools/dreams/null_adf.awb
+Packagehint=asimcore
+
+[Null Package]
+File=modules/null_package.awb
+Packagehint=asimcore
+
+[Open x86 ISA for Micro Ops]
+File=modules/openx86/isa/open_x86_isa/open_x86_isa.awb
+Packagehint=openx86
+
+[Open x86 ISA for Micro Ops/Requires]
+register_names=Open x86 Registers None
+micro_inst=Open x86 Micro Inst
+macro_inst=Open x86 Macro Inst
+
+[Open x86 Registers None]
+File=modules/openx86/register_names/open_x86_regs_none/open_x86_regs_none.awb
+Packagehint=openx86
+
+[Open x86 Macro Inst]
+File=modules/openx86/macro_inst/open_x86_macro_inst/open_x86_macro_inst.awb
+Packagehint=openx86
+
+[Open x86 Macro Inst/Requires]
+cpu_mode=Open x86 CPU MODE
+xed=Open XED2 x86(ia32) instruction encoder decoder
+
+[Open x86 CPU MODE]
+File=modules/openx86/cpu_mode/open_x86_cpu_mode/open_x86_cpu_mode.awb
+Packagehint=openx86
+
+[Open x86 Micro Inst/Requires]
+iaddr=Open x86 Micro and Macro-Instruction Address
+
+[Open x86 Micro Inst]
+File=modules/openx86/micro_inst/open_x86_micro_inst/open_x86_micro_inst.awb
+Packagehint=openx86
+
+[Open x86 Micro and Macro-Instruction Address]
+File=modules/openx86/iaddr/open_inst_addr/open_inst_addr.awb
+Packagehint=openx86
+
+[Null v2]
+File=feeders/inst/null/null_feeder_v2.awb
+Packagehint=feeder
+
+[InstFeeder_BaseInterface]
+File=feeders/inst/interface/base/instfeederbase.awb
+Packagehint=feeder
+
+[Instruction Feeder]
+File=feeders/inst/instfeeder.awb
+Packagehint=feeder
+
+[Instruction Feeder/Requires]
+instfeeder_implementation=Null v2
+instfeeder_interface=InstFeeder_BaseInterface
+
+
+[Simple Openx86 Chip/Requires]
+cpu=Simple Openx86 CPU
+
+[Simple Open x86 Board]
+File=modules/openx86/board/simple_openx86_board/simple_openx86_board.awb
+Packagehint=openx86
+
+[Simple Openx86 Chip]
+File=modules/openx86/chip/simple_openx86_chip/simple_openx86_chip.awb
+Packagehint=openx86
+
+[Simple Open x86 Board/Requires]
+chip=Simple Openx86 Chip
+
+[Simple Openx86 CPU/Requires]
+cpu_inst=Null CPU Instruction
+hardware_context=Asim Hardware Context
+
+[Simple Openx86 CPU]
+File=modules/openx86/cpu/simple_openx86_cpu/simple_openx86_cpu.awb
+Packagehint=openx86
+
+[Asim Hardware Context]
+File=feeders/common/hw_context/hw_context.awb
+Packagehint=feeder
+
+[Null CPU Instruction]
+File=modules/openx86/cpu_inst/null_cpu_inst/null_cpu_inst.awb
+Packagehint=openx86
+
+[Controller without TCL]
+File=config/pm/asim/controllers/controllerNoTCL.apm
+Packagehint=asimcore
+
+[Open XED2 x86(ia32) instruction encoder decoder]
+File=lib/xed2-ia32/open-xed2_ia32.awb
+Packagehint=openx86

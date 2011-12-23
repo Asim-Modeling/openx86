@@ -1,0 +1,25 @@
+/********************************************************************
+ *
+ * Awb module specification
+ *
+ *******************************************************************/
+
+/*
+ * %AWB_START
+ *
+ * %name Simple Openx86 CPU
+ * %desc Simple Openx86 CPU
+ * %attributes simple_cpu
+ * %provides cpu
+ * %requires hardware_context cpu_inst
+ * %public simple_openx86_cpu.h
+ * %private simple_openx86_cpu.cpp
+ *
+ * %export NUM_HWCS_PER_CPU       1 "Number of hardware contexts per CPU"
+ * %const TOTAL_NUM_HWCS          8 "This should be calc'ed from TOTAL_NUM_CPUS * HWCS_PER_CPU!"
+ *
+ * %param %dynamic ISSUE_BW      3 "Issue bandwidth"
+ * %param IPC_TARGET  0.25 "IPC target"
+ *
+ * %AWB_END
+ */

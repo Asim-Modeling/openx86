@@ -1,0 +1,23 @@
+/********************************************************************
+ *
+ * Awb module specification
+ *
+ *******************************************************************/
+
+/*
+ * %AWB_START
+ *
+ * %name Simple Openx86 Chip
+ * %desc Simpe openx86 chip
+ * %attributes openx86
+ *
+ * %provides chip
+ * %requires cpu
+ *
+ * %public simple_openx86_chip.h
+ * %private simple_openx86_chip.cpp
+ * 
+ * %dynamic %export TOTAL_NUM_CPUS 1 "Total number of CPUs on chip"
+ *
+ * %AWB_END
+ */

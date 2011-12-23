@@ -1,0 +1,16 @@
+Awb module specification
+
+%AWB_START
+
+%name Open x86 Macro Inst
+%desc OPen x86 Macro Inst
+%attributes x86
+%provides macro_inst
+
+%public open_x86_macro_inst.h 
+%private open_x86_macro_inst.cpp
+
+%requires cpu_mode xed
+
+%AWB_END
+

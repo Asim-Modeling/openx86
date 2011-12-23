@@ -1,0 +1,20 @@
+Awb module specification
+
+%AWB_START
+
+%name Open x86 ISA for Micro Ops
+%desc Open x86 ISA for Micro Ops
+%attributes openx86
+%provides isa
+
+%requires register_names
+%requires macro_inst
+%requires micro_inst
+
+%public open_x86_isa.h
+%private 
+
+%param %dynamic REC_INST_STAT 0 "Record instruction life analysis stats"
+
+%AWB_END
+

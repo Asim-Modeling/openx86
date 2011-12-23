@@ -1,0 +1,23 @@
+/********************************************************************
+ *
+ * Awb module specification
+ *
+ *******************************************************************/
+
+/*
+ * %AWB_START
+ *
+ * %name Simple Open x86 Board
+ * %desc Simple board for open x86 model development
+ * %attributes openx86
+ *
+ * %requires chip 
+ * %provides board
+ *
+ * %public simple_openx86_board.h
+ * %private simple_openx86_board.cpp
+ *
+ * %export %dynamic NUM_CHIPS 1 "Total Number of Chips on Board"
+ *
+ * %AWB_END
+ */

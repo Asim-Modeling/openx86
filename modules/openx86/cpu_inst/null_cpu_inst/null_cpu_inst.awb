@@ -1,0 +1,12 @@
+************************* AWB module specification *************************
+
+%AWB_START
+
+%name Null CPU Instruction
+%desc Null CPU Pipleine Instruction Stub
+%attributes openx86
+%provides cpu_inst
+%public null_cpu_inst.h 
+%private null_cpu_inst.cpp
+
+%AWB_END

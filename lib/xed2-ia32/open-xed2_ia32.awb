@@ -1,0 +1,13 @@
+%AWB_START
+%name Open XED2 x86(ia32) instruction encoder decoder
+%desc OPen XED2 x86(ia32) instruction encoder decoder
+%attributes x86 xed decoder encoder 
+%provides xed
+
+%public include/xed-interface.h
+
+%library lib/xed2-ia32/lib/libxed.a
+%include lib/xed2-ia32/include
+
+%AWB_END
+
