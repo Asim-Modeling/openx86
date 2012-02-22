@@ -167,7 +167,7 @@ class MICRO_INST_CLASS : public ASIM_MM_CLASS<MICRO_INST_CLASS>,
     inline bool IsNonSequentialPC() const {return false;}
     inline bool IsEndOfMacro() const {return false;}
     
-    void CreateNewMacroOp(UINT64 LIP) const {};
+    void CreateNewMacroOp(UINT64 LIP);
 
 
 

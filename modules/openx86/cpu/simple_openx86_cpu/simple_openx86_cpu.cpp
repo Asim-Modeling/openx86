@@ -135,14 +135,14 @@ ASIM_CPU_CLASS::FetchNextInstruction(
             //ainst = hwc.Fetch(cycle,nextPc);
         }
    } 
-    CPU_INST inst;
+    CPU_INST cInst;
     
-    inst = new CPU_INST_CLASS(cpuNum, &hwc, hwc.GetUID(), ainst);
+    cInst = new CPU_INST_CLASS(cpuNum, &hwc, hwc.GetUID(), ainst);
     
     TRACE(Trace_Sys, cout << "\tFetch: ");
-    TRACE(Trace_Sys, inst->DumpTrace());
+    TRACE(Trace_Sys, cInst->DumpTrace());
                 
-    return inst;
+    return cInst;
 }
 
 /**

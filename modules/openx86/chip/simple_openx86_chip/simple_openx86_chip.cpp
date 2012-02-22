@@ -57,13 +57,15 @@ ASIM_CHIP_CLASS::ASIM_CHIP_CLASS (
 
       // New each submodule
 
+      NewClockDomain("CORE_CLOCK_DOMAIN", (float) 4);
+
       cpu = new ASIM_CPU [TOTAL_NUM_CPUS];
       
       for (UINT32 i=0; i<TOTAL_NUM_CPUS; i++) 
       {
           ostringstream name;
           name << "CPU_" << i;
-          (this, name.str().c_str(), i, chip_num);
+          cpu[i] = new ASIM_CPU_CLASS(this, name.str().c_str(), i, chip_num);
       }
 
       // New each algorithm
@@ -106,6 +108,8 @@ ASIM_CHIP_CLASS::InitModule ()
     bool ok = true;
 
     TRACE(Trace_Debug, cout << "0: Init Module " << Name() << endl);
+
+    RegisterClock("CORE_CLOCK_DOMAIN", newCallback(this, &ASIM_CHIP_CLASS::Clock));
 
     // Submodule initilizations go here
 

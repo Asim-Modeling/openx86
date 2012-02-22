@@ -34,6 +34,7 @@
 
 // ASIM public modules
 #include "asim/provides/isa.h"
+#include "asim/provides/macro_inst.h"
 
 UINT32 MAX_MICRO_INST = REC_INST_STAT ? 65000 : 5000;
 
@@ -75,4 +76,10 @@ MICRO_INST_CLASS::SetDis(
     disassembly[255] = 0;
 }
 
+void
+MICRO_INST_CLASS::CreateNewMacroOp(
+    UINT64 LIP)
+{
+    macroInst = new MACRO_INST_CLASS(swc);
+}
 

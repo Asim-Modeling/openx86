@@ -372,3 +372,34 @@ Directory modules/openx86/macro_inst/open_x86_macro_inst
  open_x86_macro_inst.awb   Locally Added               0 
 
 - Initial template implementation of a simple openx86 core model
+
+----------
+mgambhir    Date: Tue Feb 21 19:45:23 EST 2012  CSN: CSN-openx86-3
+                  Wed Feb 22 00:45:23 UTC 2012
+
+
+Directory lib/xed2-intel64/lib
+ libxed.a                  Locally Added               0 
+
+Directory lib/xed2-ia32/lib
+ libxed.a                  Locally Added               0 
+
+Directory modules/openx86/chip/simple_openx86_chip
+ simple_openx86_chip.cpp   Locally Modified            2 
+
+Directory modules/openx86/cpu_inst/null_cpu_inst
+ null_cpu_inst.cpp         Locally Modified            2 
+ null_cpu_inst.h           Locally Modified            2 
+
+Directory modules/openx86/micro_inst/open_x86_micro_inst
+ open_x86_micro_inst.h     Locally Modified            2 
+ open_x86_micro_inst.cpp   Locally Modified            2 
+
+Directory modules/openx86/cpu/simple_openx86_cpu
+ simple_openx86_cpu.cpp    Locally Modified            2 
+
+-Patch by Trevor Carlson and  Wim Heirman 
+ - bug fixes to initialize member variables properly
+ - Added new clock domain in ASIM_CHIP_CLASS
+ - CPU_INST_CLASS does not inherit from ASIM_INST_CLASS anymore. Added
+   bridging functions instead

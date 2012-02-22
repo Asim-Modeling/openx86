@@ -30,7 +30,8 @@
 
 #include "asim/provides/isa.h"
 
-typedef class CPU_INST_CLASS* CPU_INST;
+#include "asim/mm.h"
+typedef class mmptr<class CPU_INST_CLASS> CPU_INST;
 
 class LAST_INST_CLASS
 {
@@ -48,11 +49,12 @@ class LAST_INST_CLASS
     CPU_INST GetLastInst(void) { return lastInstruction; }
 };
 
-class CPU_INST_CLASS : public ASIM_INST_CLASS 
+class CPU_INST_CLASS : public ASIM_MM_CLASS<CPU_INST_CLASS>,
+    public ASIM_ITEM_CLASS
 {
     
-    static UINT64       uniqueAsimId;   ///< static ID to assign uniqueId
-    const UINT64        uniqueId;       ///< unique ID
+    static UID_GEN64    staticUidCtr;   ///< static ID to assign uniqueId
+    const UINT64        uid;            ///< unique ID
     ASIM_INST           aInst;       	//the pointer to the architectural instruction
     HW_CONTEXT          hwc; 
     UINT32              hwcNum;
@@ -84,6 +86,14 @@ class CPU_INST_CLASS : public ASIM_INST_CLASS
     void Link();
     void NullAllSrcDep() {};
     void NullAllDstDep() {};
+
+    // Pass the ASIM_INST functions along to the ASIM_INST data member
+    // Originally this class was derived from ASIM_INST_CLASS, but that created memory
+    //  issues with mmptr
+    inline bool IsControlOp()const { return aInst->IsControlOp(); }
+    inline IADDR_CLASS GetActualTarget() { return aInst->GetActualTarget(); }
+    IADDR_CLASS GetNextVirtualPC() const { return aInst->GetNextVirtualPC(); }
+    IADDR_CLASS GetVirtualPC() const { return aInst->GetVirtualPC(); }
 };
 
 #endif //_NULL_CPUINST_

@@ -28,7 +28,8 @@
 
 #define MAX_CPU_INST 2
 
-UINT64 CPU_INST_CLASS::uniqueAsimId = 0;
+ASIM_MM_DEFINE(CPU_INST_CLASS, MAX_CPU_INST);
+UID_GEN64 CPU_INST_CLASS::staticUidCtr = 0;
 
 /************************************************
  * CLASS LAST_INST_CLASS
@@ -50,14 +51,16 @@ LAST_INST_CLASS::~LAST_INST_CLASS()
  *
  ****************************************************************/
 CPU_INST_CLASS::CPU_INST_CLASS(const UINT32 cpu, HW_CONTEXT hwc, const UINT32 hwc_num, ASIM_INST archinst)
-    : uniqueId(uniqueAsimId),
+    : ASIM_MM_CLASS<CPU_INST_CLASS>(staticUidCtr++),
+      uid(ASIM_MM_CLASS<CPU_INST_CLASS>::GetMMUid()),
       hwc(hwc),
       hwcNum(hwc_num),
       cpuNum(cpu), 
-      Committed(false)
+      Committed(false),
+      next(NULL),
+      prev(NULL)
 {   
     aInst = archinst;
-    uniqueAsimId++;
 }
 
 void
